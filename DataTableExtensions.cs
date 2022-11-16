@@ -6,14 +6,14 @@ namespace GHHSoftware.Common.ExtensionMethods
 {
   public static class DataTableExtensions
     {
-				/************************************************************
-				*	This was created to make it simple to return type-safe
-				*		values for data returned from ADO - rather than use
-				*		repeated code and/or a common function, this allows
-				*		us to simply use the DataRow and SqlDataReader results
-				*		as if these features were built-in
-				*************************************************************/
-			
+        /************************************************************
+        * This was created to make it simple to return type-safe
+        *   values for data returned from ADO - rather than use
+        *   repeated code and/or a common function, this allows
+        *   us to simply use the DataRow and SqlDataReader results
+        *   as if these features were built-in
+        *************************************************************/
+      
         public static string GetStringSafe(this DataRow row, string columnName)
         {
             return row[columnName] != DBNull.Value ? row[columnName].ToString() : string.Empty;
