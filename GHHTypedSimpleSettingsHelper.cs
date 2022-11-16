@@ -6,6 +6,13 @@ namespace GHHSoftware.Common.Helpers
 {
   public class GHHTypedSimpleSettingsHelper
   {
+    /************************************************************
+    * This was created to support a simple, CSV-based local 
+    *   settings file.  In the past I had explicit (and many)
+    *   separate methods to deal with different types of data,
+    *   but this allows me to use multiple types quite easily.
+    *************************************************************/
+		
     public string ErrorMessage { get; }
     private string _errorMessage;
 
